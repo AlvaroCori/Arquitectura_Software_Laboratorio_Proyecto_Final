@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+header{
+  background: linear-gradient(to bottom, #e6c300 0%, #f8da8c 100%);
+  height: 70px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+header:hover{
+  font-size: 40px;
+}
+body{
+    background: linear-gradient(#fff4d4, #f9ffa5); 
+     background-color: #ff0000; 
+}
