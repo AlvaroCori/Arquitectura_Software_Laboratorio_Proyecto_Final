@@ -1,7 +1,10 @@
 module.exports = class FigureModel {
-    constructor(id, name, price) {
-      this.Id = id || 0;
-      this.Name = name || "";
-      this.Price = price || "";
+    constructor(object) {
+      this.id = object["id"];
+      this.name = object["name"];
+      this.quantity = object["quantity"];
+      this.price = object["price"];
+      this.image = object["image"];
+      this.user = object["user"];
     }
 }
