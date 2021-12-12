@@ -14,7 +14,7 @@ class sale_service(abstraction_sale_service):
     def to_units(self,elements):
         units = []
         for element in elements:
-            units.append(unit_sale_model(element["key"],element["price"]))
+            units.append(unit_sale_model(element["Key"],element["Price"]))
         return units
 
     def __get_total(self,units):
