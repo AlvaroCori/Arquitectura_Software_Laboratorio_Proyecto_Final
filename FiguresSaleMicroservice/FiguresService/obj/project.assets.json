@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "FiguresModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FiguresModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FiguresModels.dll": {}
+        }
+      },
+      "FiguresRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FiguresModels": "1.0.0",
+          "SalesService": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FiguresRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FiguresRepository.dll": {}
+        }
+      },
+      "SalesService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FiguresModels": "1.0.0",
+          "Users": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SalesService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SalesService.dll": {}
+        }
+      },
+      "Users/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FiguresModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FiguresModels/1.0.0": {
+      "type": "project",
+      "path": "../FiguresModels/FiguresModels.csproj",
+      "msbuildProject": "../FiguresModels/FiguresModels.csproj"
+    },
+    "FiguresRepository/1.0.0": {
+      "type": "project",
+      "path": "../FiguresRepository/FiguresRepository.csproj",
+      "msbuildProject": "../FiguresRepository/FiguresRepository.csproj"
+    },
+    "SalesService/1.0.0": {
+      "type": "project",
+      "path": "../SalesService/SalesService.csproj",
+      "msbuildProject": "../SalesService/SalesService.csproj"
+    },
+    "Users/1.0.0": {
+      "type": "project",
+      "path": "../Users/Users.csproj",
+      "msbuildProject": "../Users/Users.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "FiguresModels >= 1.0.0",
+      "FiguresRepository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ABC\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresService\\FiguresService.csproj",
+      "projectName": "FiguresService",
+      "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresService\\FiguresService.csproj",
+      "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresService\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj": {
+              "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj"
+            },
+            "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\FiguresRepository.csproj": {
+              "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\FiguresRepository.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

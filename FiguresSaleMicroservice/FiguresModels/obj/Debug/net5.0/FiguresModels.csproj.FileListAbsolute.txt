@@ -1,0 +1,12 @@
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\bin\Debug\net5.0\FiguresModels.deps.json
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\bin\Debug\net5.0\FiguresModels.dll
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\bin\Debug\net5.0\ref\FiguresModels.dll
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\bin\Debug\net5.0\FiguresModels.pdb
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\FiguresModels.csproj.AssemblyReference.cache
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\FiguresModels.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\FiguresModels.AssemblyInfoInputs.cache
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\FiguresModels.AssemblyInfo.cs
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\FiguresModels.csproj.CoreCompileInputs.cache
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\FiguresModels.dll
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\ref\FiguresModels.dll
+c:\Users\ABC\Downloads\arquitectura\Arquitectura_Software_Laboratorio_Proyecto_Final\FiguresSaleMicroservice\FiguresModels\obj\Debug\net5.0\FiguresModels.pdb

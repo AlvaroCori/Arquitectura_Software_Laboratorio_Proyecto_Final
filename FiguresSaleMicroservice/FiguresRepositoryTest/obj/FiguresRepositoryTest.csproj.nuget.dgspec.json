@@ -1,0 +1,328 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepositoryTest\\FiguresRepositoryTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj",
+        "projectName": "FiguresModels",
+        "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj",
+        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepositoryTest\\FiguresRepositoryTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepositoryTest\\FiguresRepositoryTest.csproj",
+        "projectName": "FiguresRepositoryTest",
+        "projectPath": "c:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepositoryTest\\FiguresRepositoryTest.csproj",
+        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepositoryTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj"
+              },
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\FiguresRepository.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\FiguresRepository.csproj"
+              },
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\SalesService.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\SalesService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\FiguresRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\FiguresRepository.csproj",
+        "projectName": "FiguresRepository",
+        "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\FiguresRepository.csproj",
+        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj"
+              },
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\SalesService.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\SalesService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\SalesService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\SalesService.csproj",
+        "projectName": "SalesService",
+        "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\SalesService.csproj",
+        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\SalesService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj"
+              },
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\Users\\Users.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\Users\\Users.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\Users\\Users.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\Users\\Users.csproj",
+        "projectName": "Users",
+        "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\Users\\Users.csproj",
+        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\Users\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj": {
+                "projectPath": "C:\\Users\\ABC\\Downloads\\arquitectura\\Arquitectura_Software_Laboratorio_Proyecto_Final\\FiguresSaleMicroservice\\FiguresModels\\FiguresModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

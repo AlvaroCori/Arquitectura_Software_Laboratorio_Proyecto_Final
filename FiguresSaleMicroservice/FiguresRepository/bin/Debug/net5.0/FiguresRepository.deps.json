@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FiguresRepository/1.0.0": {
+        "dependencies": {
+          "FiguresModels": "1.0.0",
+          "SalesService": "1.0.0"
+        },
+        "runtime": {
+          "FiguresRepository.dll": {}
+        }
+      },
+      "FiguresModels/1.0.0": {
+        "runtime": {
+          "FiguresModels.dll": {}
+        }
+      },
+      "SalesService/1.0.0": {
+        "dependencies": {
+          "FiguresModels": "1.0.0",
+          "Users": "1.0.0"
+        },
+        "runtime": {
+          "SalesService.dll": {}
+        }
+      },
+      "Users/1.0.0": {
+        "dependencies": {
+          "FiguresModels": "1.0.0"
+        },
+        "runtime": {
+          "Users.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FiguresRepository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FiguresModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SalesService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Users/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
