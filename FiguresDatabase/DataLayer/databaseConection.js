@@ -13,11 +13,15 @@ module.exports = class PostgresConnection {
     }
     async GetFigures()
     {
-        this.client.connect();
-        var rs = "0";
-        const res = await this.client.query(`SELECT * FROM public."Figures"`);
+        this.client.connect(error => {
+            if (error) {
+                console.log(error);
+            }
+        });
+        
+        const request = await this.client.query(`SELECT * FROM public."Figures"`);
         this.client.end();
-        return res.rows;
+        return request.rows;
     }
 
 }

@@ -32,6 +32,10 @@ namespace FiguresSalesAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FiguresSalesAPI", Version = "v1" });
             });
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => { options.AllowAnyOrigin(); options.AllowAnyMethod(); options.AllowAnyHeader(); });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +46,7 @@ namespace FiguresSalesAPI
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FiguresSalesAPI v1"));
+                app.UseCors(options => { options.AllowAnyOrigin(); options.AllowAnyMethod(); options.AllowAnyHeader(); });
             }
 
             app.UseHttpsRedirection();
@@ -49,6 +54,7 @@ namespace FiguresSalesAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,13 +1,13 @@
 class FigureModel {
-    constructor(id, name,price,quantity,image) {
+    constructor(id, name,price,quantity,image,user) {
         this.id = id || 0;
         this.name = name || "";
         this.price = price || 0.0;
         this.quantity = quantity || 0; 
         this.image = image || "";
+        this.user = user || "";
       }
 }
-  
   class FigureView {
     createElement(tag, className) {
         const element = document.createElement(tag)
@@ -30,6 +30,7 @@ class FigureModel {
         this.price.textContent = "Precio :"+ figure.price.toString() 
         this.quantity = this.createElement('p')
         this.quantity.textContent = "Cantidad :"+figure.quantity.toString() 
+        
         this.element.append(this.image)
         this.element.append(this.name)
         this.element.append(this.price)
@@ -40,6 +41,7 @@ class FigureModel {
     printFigures(figures)
     {
         this.app = this.getElement('#container-figures')
+        console.log(figures)
         figures.forEach(figure => {
             this.app.append(this.getFigure(figure))
         });
@@ -47,42 +49,78 @@ class FigureModel {
   }
   
   class FigureController {
-    constructor(models, view) {
-      this.models = models
-      this.view = view
+    constructor(view) {
+      
+      this.models =  new Array();
+      this.view = view;
     }
-    createFigure(model) {    
-        this.models.push(model)
-    }
-    printFigures()
+
+    async printFigures()
     {
-        this.view.printFigures(this.models)
+        let results = await this.fetchFigures();
+        let elements = this.getArrayOfModel(results);
+        this.view.printFigures(elements);
+        this.models = elements;
     }
-    postFigure(event)
+    async fetchFigures(){
+        const url = `${baseUrl}/figures`;
+        let response = await fetch(url);
+        try{
+            if(response.status == 200){
+                let data = await response.json();
+                return data;
+            } else {
+                var errorText = await response.text();
+                alert(errorText);
+            }
+        } catch(error){
+            var errorText = await error.text();
+            alert(errorText);
+        }
+        return [];
+    }
+    getArrayOfModel(figures)
+    {
+        var elements = new Array(); 
+        let index = 0;
+        let limit = 0;
+        
+        for(index=0, limit=figures.length; index < limit; index++){
+            let figure = figures[index];
+            let model = new FigureModel(figure["id"],figure["name"],figure["price"],figure["quantity"],figure["image"],figure["user"]);
+            elements.push(model);
+        }
+        return elements;
+    }
+
+    async postFigure(event)
     {
         event.preventDefault();
-        let url = `${baseUrl}/figures`;
+        let url = `${saleUrl}/api/figures`;
+        let id_camp = "1";
+        //event.currentTarget.name.value;
+        let price_camp = "200";//event.currentTarget.price.value;
+        let quantity_camp = "2";//event.currentTarget.quantity.value;
+        let user_camp = "admin";
 
-        const formData = new FormData();
-        let name = event.currentTarget.name.value;
-        let price = event.currentTarget.price.value;
-        let quantity = event.currentTarget.quantity.value;
-        let image = event.currentTarget.image.value;
-        formData.append('name', name);
-        formData.append('price', price);
-        formData.append('quantity', quantity);
-        formData.append('image', image);
-        /*
-        fetch(url, {
+        var data = {
+            id: id_camp,
+            price: price_camp,
+            quantity: quantity_camp,
+            user : user_camp
+        };
+        async function alertDiscount(response)
+        {
+            let data = await response.json();
+            alert(JSON.stringify(data));
+        }
+        let object = fetch(url, {
+            headers: { "Content-Type": "application/json; charset=utf-8" },
             method: 'POST',
-            headers: { 
-            "Authorization": `Bearer ${sessionStorage.getItem("jwt")}`
-            },
-            body: formData
+            body: JSON.stringify([data])
         }).then(response => {
             if(response.status === 201){
-                alert('Se creo una nueva marca.');
-                location.reload();
+                alertDiscount(response)
             } else {
                 response.text()
                 .then((error)=>{
@@ -90,15 +128,15 @@ class FigureModel {
                 });
             }
         });
-        */
     }
   }
 
 const baseUrl = "http://localhost:5050"
-const app = new FigureController([], new FigureView())
-app.createFigure(new FigureModel(1,"Tanque De Asedio - Starcraft II",200.50,30,"https://m.media-amazon.com/images/I/51dWKLmiuSL._AC_.jpg"))
-app.createFigure(new FigureModel(2,'Rambo - Rambo II',400,10, "https://m.media-amazon.com/images/I/41NTwikBZCL._AC_.jpg"))
-app.printFigures()
+const saleUrl = "http://localhost:5000"
+const app = new FigureController(new FigureView())
+
+//app.printFigures()
+
 
 document.getElementById("figure-form").addEventListener('submit', app.postFigure);
 
