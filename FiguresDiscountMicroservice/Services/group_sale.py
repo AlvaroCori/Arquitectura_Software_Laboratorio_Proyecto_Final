@@ -1,8 +1,6 @@
-from .bridge_sale import I_bridge_sale
-from Models.sale_model import sale_model
+from .bridge_sale import IBridgeSale
 
-class group_sale(I_bridge_sale):
-
+class GroupSale(IBridgeSale):
 
     def __get_keys(self,units):
         keys = dict()
@@ -12,6 +10,7 @@ class group_sale(I_bridge_sale):
             else:
                 keys[u.key] = keys[u.key] + 1
         return keys
+
     def __get_discount(self,keys):
         discount = "ninguno"
         for index in keys:
@@ -21,6 +20,7 @@ class group_sale(I_bridge_sale):
             else:
                 discount = "bajo"
         return discount
+
     def calculate_sale(self,units):
         keys = self.__get_keys(units)
         level = self.__get_discount(keys)    

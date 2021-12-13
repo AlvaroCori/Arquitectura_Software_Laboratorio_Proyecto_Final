@@ -1,8 +1,6 @@
-from .bridge_sale import I_bridge_sale
-from Models.sale_model import sale_model
+from .bridge_sale import IBridgeSale
 
-class unitary_sale(I_bridge_sale):
-
+class UnitarySale(IBridgeSale):
 
     def calculate_sale(self,units):
         counter = len(units)

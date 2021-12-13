@@ -1,10 +1,10 @@
-from .Irepository import Irepository
+from .Irepository import IRepository
 
-class repository(Irepository):
+class Repository(IRepository):
     def __init__(self):
-        self.discounts= dict()
-        self.discounts["ninguno"] = 0
-        self.discounts["bajo"] = 5
-        self.discounts["medio"] = 10
+        self.__discounts= dict()
+        self.__discounts["ninguno"] = 0
+        self.__discounts["bajo"] = 5
+        self.__discounts["medio"] = 10
     def get_discount(self,key):
-        return self.discounts[key]
+        return self.__discounts[key]

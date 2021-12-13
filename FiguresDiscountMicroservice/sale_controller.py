@@ -1,15 +1,14 @@
 import requests
 from flask import Flask, request, jsonify
-from Services.sale_service import sale_service
-from Models.sale_model import sale_model
-class sale_controller:
+from Services.sale_service import SaleService
+class SaleController:
     def __init__(self):
-        self.sale_service = sale_service()
+        self.sale_service = SaleService()
         self.app = Flask(__name__)
 
         @self.app.get("/figures")
         def get_figures():
-            return jsonify(self.countries)
+            return jsonify("Realice un post con /unitary o /group")
 
 
         @self.app.post("/unitary")
@@ -27,12 +26,8 @@ class sale_controller:
         sale = self.sale_service.calculate_sale(type_sale,elements)
         return sale.to_dict(), 201
 
-    def init(self):
+    def init(self,port_app):
         if __name__ == "__main__":
-            self.app.run(port=5006)
-controller = sale_controller()
-controller.init()
-
-
-#factory method
-#bridge method
+            self.app.run(port=port_app)
+controller = SaleController()
+controller.init(5006)

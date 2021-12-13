@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-class I_bridge_sale(ABC):
+class IBridgeSale(ABC):
     @abstractmethod
     def calculate_sale(self,elements):
         pass

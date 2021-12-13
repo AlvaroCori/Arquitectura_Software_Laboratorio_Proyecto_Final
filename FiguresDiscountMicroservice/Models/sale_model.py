@@ -1,4 +1,4 @@
-class sale_model:
+class SaleModel:
     def __init__(self,total=0,level_discount = "ninguno",discount=0):
         self.discount = discount
         self.level_discount = level_discount
