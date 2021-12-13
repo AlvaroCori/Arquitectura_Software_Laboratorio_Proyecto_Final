@@ -3,7 +3,7 @@ class SaleModel:
         self.discount = discount
         self.level_discount = level_discount
         self.total = total
-    def to_dict(self):
+    def to_dictionary(self):
         sale_dictionary = dict()
         sale_dictionary["discount"] = self.discount
         sale_dictionary["levelDiscount"] = self.level_discount

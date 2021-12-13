@@ -1,15 +1,14 @@
 from Models.sale_model import SaleModel
 from Models.unit_sale_model import UnitSaleModel
 from .abstraction_sale_service import AbstractionSaleService
+from .Repository.repository import Repository
 from .unitary_sale import UnitarySale
 from .group_sale import GroupSale
 
 class SaleService(AbstractionSaleService):
 
-    def __init__(self):
-        self.__unitary = UnitarySale()
-        self.__group = GroupSale()
-        AbstractionSaleService.__init__(self)
+    def __init__(self,repository = Repository(),unitary = UnitarySale(), group = GroupSale()):
+        AbstractionSaleService.__init__(self,repository,unitary,group)
         
     def to_units(self,elements):
         units = []
@@ -31,9 +30,9 @@ class SaleService(AbstractionSaleService):
         units = self.to_units(elements)
         level = "ninguno"
         if (type_sale=="unitary"):
-            level = self.__unitary.calculate_sale(units)
+            level = self._unitary.calculate_sale(units)
         else:
-            level = self.__group.calculate_sale(units)
+            level = self._group.calculate_sale(units)
 
         total_price = self.__get_total(units)
         discount_percentaje = self._repository.get_discount(level)

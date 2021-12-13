@@ -1,20 +1,20 @@
 from .bridge_sale import IBridgeSale
-
+from Models.unit_sale_model import UnitSaleModel
 class GroupSale(IBridgeSale):
 
-    def __get_keys(self,units):
+    def __get_keys_quantity(self,units):
         keys = dict()
-        for u in units:
-            if (u not in keys):
-                keys[u.key] = 0
+        for unit in units:
+            if (unit.key not in keys):
+                keys[unit.key] = 1
             else:
-                keys[u.key] = keys[u.key] + 1
+                keys[unit.key] = keys[unit.key] + 1
         return keys
 
     def __get_discount(self,keys):
         discount = "ninguno"
         for index in keys:
-            if (keys[index]>3):
+            if (keys[index] >= 4):
                 discount = "medio"
                 break
             else:
@@ -22,6 +22,6 @@ class GroupSale(IBridgeSale):
         return discount
 
     def calculate_sale(self,units):
-        keys = self.__get_keys(units)
+        keys = self.__get_keys_quantity(units)
         level = self.__get_discount(keys)    
         return level
