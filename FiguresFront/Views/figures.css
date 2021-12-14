@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+header{
+  background: linear-gradient(to bottom, #e6c300 0%, #f8da8c 100%);
+  height: 70px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.figure-style{
+  background: linear-gradient(#e2ae11, #ccd820);
+  border: 2px outset rgb(41, 23, 7);
+  font-size: 20px;
+}
+.figure-style:hover{
+  background: linear-gradient(#fdbe02, #eeff00);
+  border: 2px outset rgb(184, 125, 17);
+}
+.sale-style{
+  background: linear-gradient(#edff49, #fcffd0);
+  border: 1px outset rgb(17, 11, 6);
+  font-size: 10px;
+}
+img {
+  border-radius: 50%;
+  height: 400px;
+  width: 320px;
+}
+header:hover{
+  font-size: 40px;
+}
+body{
+    background: linear-gradient(#fff4d4, #f9ffa5); 
+    background-color: #ff0000; 
+}
