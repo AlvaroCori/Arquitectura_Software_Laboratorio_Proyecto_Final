@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "85830c1f-771b-4d21-944c-a9b233069121",
+		"name": "FiguresMicroservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SALES",
+			"item": [
+				{
+					"name": "UnitaryNone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\": 200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\":200\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5006/unitary",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5006",
+							"path": [
+								"unitary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupMiddle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\": 200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\":200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\": 200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\": 200\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5006/group",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5006",
+							"path": [
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupLow",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\": 200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\":200\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5006/group",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5006",
+							"path": [
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnitaryLow",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\": 200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\":200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\": 200\r\n    },\r\n    {\r\n        \"Key\":\"admin\",\r\n        \"Price\":200\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5006/unitary",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5006",
+							"path": [
+								"unitary"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FIGURES",
+			"item": [
+				{
+					"name": "GetFigures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5050/figures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"figures"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REALIZESALE",
+			"item": [
+				{
+					"name": "RealiceSale",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": \"1\",\r\n        \"quantity\": \"2\",\r\n        \"price\": \"200\",\r\n        \"user\": \"admin\"\r\n    },\r\n    {\r\n        \"id\": \"2\",\r\n        \"quantity\": \"2\",\r\n        \"price\": \"400\",\r\n        \"user\": \"admin\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/figures",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"figures"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

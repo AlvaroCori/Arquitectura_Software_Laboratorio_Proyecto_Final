@@ -2,13 +2,14 @@ var FigureModel = require("../Models/FigureModel")
 var Repository = require("../DataLayer/FiguresRepository");
 
 module.exports = class FigureService {
-    constructor()
+    #repository
+    constructor(repository = new Repository())
     {
-        this.repository = new Repository();
+        this.#repository = repository;
     }
-    async GetFiguresAsync() {
+    async getFiguresAsync() {
         let figures = [];
-        let figures_jsons = await this.repository.GetFiguresAsync();
+        let figures_jsons = await this.#repository.getFiguresAsync();
         figures_jsons.forEach(figure => {
             figures.push(new FigureModel(figure))
         });

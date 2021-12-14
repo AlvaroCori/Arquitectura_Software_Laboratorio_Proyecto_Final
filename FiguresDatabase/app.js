@@ -10,3 +10,4 @@ const PORT = process.env.PORT ||5050;
 controller = new FigureController(app);
 
 httpServer.listen(PORT);
+///npm start dev

@@ -1,9 +1,10 @@
 const {Client} = require('pg')
 
 module.exports = class PostgresConnection {
+    #client;
     constructor()
     {
-        this.client = new Client({
+        this.#client = new Client({
             host: 'localhost', 
             port: 5432,
             database: 'FigureAPI',
@@ -11,16 +12,17 @@ module.exports = class PostgresConnection {
             password: 'postgres'
         });
     }
-    async GetFigures()
+    async getFigures()
     {
-        this.client.connect(error => {
+
+        this.#client.connect(error => {
             if (error) {
                 console.log(error);
             }
         });
         
-        const request = await this.client.query(`SELECT * FROM public."Figures"`);
-        this.client.end();
+        const request = await this.#client.query(`SELECT * FROM public."Figures"`);
+        this.#client.end();
         return request.rows;
     }
 

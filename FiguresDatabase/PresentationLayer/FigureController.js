@@ -1,11 +1,13 @@
+var http = require('http');
 var FigureService = require("../BusinessLayer/FigureService");
 module.exports = class FigureController {
-    constructor(app)
+    #service;
+    constructor(app, service= new FigureService())
     {
         this.app = app
-        this.service = new FigureService();
+        this.#service = service;
         this.app.get('/figures', (async (req, res) => {
-            const figures = await this.service.GetFiguresAsync()
+            const figures = await this.#service.getFiguresAsync()
             res.send(figures)
             res.end()
         })

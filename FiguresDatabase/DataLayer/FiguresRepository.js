@@ -1,14 +1,16 @@
+const { database } = require("pg/lib/defaults");
 var FigureModel = require("../Models/FigureModel")
 var Database = require("./databaseConection")
 
 module.exports = class Repository {
-    constructor()
+    #database;
+    constructor(database = new Database())
     {
-        this.database = new Database()
+        this.#database = database
     }
-    async GetFiguresAsync() {
+    async getFiguresAsync() {
         
-        let figures_jsons = await this.database.GetFigures();
+        let figures_jsons = await this.#database.getFigures();
         return figures_jsons;
     }
 }
